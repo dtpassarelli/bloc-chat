@@ -1,9 +1,10 @@
 (function() {
-	function BootstrapCtrl($uibModal) {
-		debugger;
-		console.log("hello")
+	function BootstrapCtrl($uibModalInstance) {
+		this.exit = function(){
+			$uibModalInstance.close();
+		}
 	}
 	angular
 		.module('blocChat')
-		.controller('BootstrapCtrl', [ '$uibModal', BootstrapCtrl]);
+		.controller('BootstrapCtrl', [ '$uibModalInstance', BootstrapCtrl]);
 })();

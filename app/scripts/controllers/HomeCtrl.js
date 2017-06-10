@@ -3,8 +3,9 @@
 		this.rooms = Room.all;
 		this.doSomething = function() {
 			$uibModal.open(
-				{
-				template: "my template"
+			{
+				controller: "BootstrapCtrl as modal",
+				templateUrl: "/templates/modal.html"
 			}
 
 			)
